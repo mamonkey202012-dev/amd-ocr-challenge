@@ -2,7 +2,7 @@ FROM rocm/pytorch:rocm10.0_ubuntu26.04_py3.14_pytorch_release_2.13.0
 
 WORKDIR /app
 
-# Salin dan pasang dependencies dengan flag kompatibilitas environment
+# Salin dan pasang dependencies
 COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir --break-system-packages -r /app/requirements.txt
 
