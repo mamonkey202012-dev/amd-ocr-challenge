@@ -1,9 +1,4 @@
-cat << 'EOF' > /app/requirements.txt
 transformers>=4.45.0
 accelerate
 pillow
-torchvision
 qwen-vl-utils
-EOF
-
-pip install -r /app/requirements.txt
